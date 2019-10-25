@@ -3,6 +3,9 @@ import Helmet from "react-helmet";
 
 import Layout from '../components/layout';
 
+import { graphql } from "gatsby"
+
+
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
@@ -10,18 +13,23 @@ import pic04 from '../assets/images/pic04.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+
+        const { data } = this.props;
+        const { allMarkdownRemark: { edges } } = data;
+        const content = edges[0];
+        const { node: { frontmatter }} = content;
+        const { title, subtitle } = frontmatter
+
 
         return (
             <Layout>
-                <Helmet title={siteTitle} />
+                <Helmet title={title} />
 
                 <section id="one" className="main style1">
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <h2>{subtitle}</h2>
                             </header>
                             <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
                         </div>
@@ -108,5 +116,20 @@ class Homepage extends React.Component {
         );
     }
 }
+
+export const query = graphql`
+  query HomePageQuery {
+    allMarkdownRemark(limit: 3) {
+        edges {
+          node {
+            frontmatter {
+              title
+              subtitle
+            }
+          }
+        }
+      }
+  }
+`
 
 export default Homepage;
