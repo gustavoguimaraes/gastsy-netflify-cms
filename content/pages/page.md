@@ -1,5 +1,5 @@
 ---
-title: Let's Party
-subtitle: Let's Party Motherfucker!!!!!!
+title: Nils Practice
+subtitle: Nils' Super Osteopathy And Body Work
 ---
 
