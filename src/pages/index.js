@@ -1,8 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-
-import Layout from '../components/layout';
-
 import { graphql } from "gatsby"
 
 
@@ -22,8 +19,20 @@ class Homepage extends React.Component {
 
 
         return (
-            <Layout>
+            <>
                 <Helmet title={title} />
+                <section id="header">
+                    <div className="inner">
+                        {/* <span className="icon major fa-cloud"></span> */}
+                        <h1>Hi, I'm <strong>Nils</strong>, I have a <br />
+                        body work practice in Berlin, Germany
+                        .</h1>
+                        <p>Welcome to my homepage.</p>
+                        {/* <ul className="actions">
+                            <li><a href="#one" className="button scrolly">Discover</a></li>
+                        </ul> */}
+                    </div>
+                </section>
 
                 <section id="one" className="main style1">
                     <div className="grid-wrapper">
@@ -42,14 +51,14 @@ class Homepage extends React.Component {
                 <section id="two" className="main style2">
                     <div className="grid-wrapper">
                         <div className="col-6">
-                            <ul className="major-icons">
+                            {/* <ul className="major-icons">
                                 <li><span className="icon style1 major fa-code"></span></li>
                                 <li><span className="icon style2 major fa-bolt"></span></li>
                                 <li><span className="icon style3 major fa-camera-retro"></span></li>
                                 <li><span className="icon style4 major fa-cog"></span></li>
                                 <li><span className="icon style5 major fa-desktop"></span></li>
                                 <li><span className="icon style6 major fa-calendar"></span></li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className="col-6">
                             <header className="major">
@@ -76,25 +85,25 @@ class Homepage extends React.Component {
                             <span className="image fit"><img src={pic02} alt="" /></span>
                             <h3>Magna feugiat lorem</h3>
                             <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
+                            {/* <ul className="actions">
                                 <li><a href="#" className="button">More</a></li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className="col-4">
                             <span className="image fit"><img src={pic03} alt="" /></span>
                             <h3>Magna feugiat lorem</h3>
                             <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
+                            {/* <ul className="actions">
                                 <li><a href="#" className="button">More</a></li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className="col-4">
                             <span className="image fit"><img src={pic04} alt="" /></span>
                             <h3>Magna feugiat lorem</h3>
                             <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                            <ul className="actions">
+                            {/* <ul className="actions">
                                 <li><a href="#" className="button">More</a></li>
-                            </ul>
+                            </ul> */}
                         </div>
 
                     </div>
@@ -106,13 +115,27 @@ class Homepage extends React.Component {
                             <h2>Ipsum feugiat consequat?</h2>
                         </header>
                         <p>Sed lacus nascetur ac ante amet sapien.</p>
-                        <ul className="actions uniform">
+                        {/* <ul className="actions uniform">
                             <li><a href="#" className="button special">Sign Up</a></li>
                             <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </section>
-            </Layout>
+
+                <section id="footer">
+                    {/* <ul className="icons">
+                        <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
+                        <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
+                        <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
+                        <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
+                        <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
+                    </ul> */}
+                    <ul className="copyright">
+                <li>&copy; Nils { new Date().getFullYear() }</li>
+                        {/* <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> */}
+                    </ul>
+                </section>
+            </>
         );
     }
 }
