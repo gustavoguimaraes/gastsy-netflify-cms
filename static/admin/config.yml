@@ -13,4 +13,24 @@ collections:
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Subtitle, name: subtitle, widget: text}
+          - {label: sectionTwo Title, name: sectionTwoTitle, widget: string}
+          - {label: sectionTwo description, name: sectionTwoDescription, widget: text}
+          - {label: sectionTwoImage, name: sectionTwoImage, widget: image}
+          - {label: sectionThree Title, name: sectionThreeTitle, widget: string}
+          - {label: sectionThree description, name: sectionThreeDescription, widget: text}
+          - {label: sectionThreeImage, name: sectionThreeImage, widget: image}
+          - {label: sectionThreeImageTwo, name: sectionThreeImageTwo, widget: image}
+          - {label: sectionFour Title, name: sectionFourTitle, widget: string}
+          - {label: sectionFour subtitle, name: sectionFourSubtitle, widget: string}
+          - {label: sectionFour ImageOne, name: sectionFourImageOne, widget: image}
+          - {label: sectionFour ImageOne Title, name: sectionFourImageOneTitle, widget: string}
+          - {label: sectionFour ImageOne subtitle, name: sectionFourImageOneSubtitle, widget: text}
+          - {label: sectionFour ImageTwo, name: sectionFourImageTwo, widget: image}
+          - {label: sectionFour ImageTwo Title, name: sectionFourImageTwoTitle, widget: string}
+          - {label: sectionFour ImageTwo subtitle, name: sectionFourImageTwoSubtitle, widget: text}
+          - {label: sectionFour ImageThree, name: sectionFourImageThree, widget: image}
+          - {label: sectionFour ImageThree Title, name: sectionFourImageThreeTitle, widget: string}
+          - {label: sectionFour ImageThree subtitle, name: sectionFourImageThreeSubtitle, widget: text}
+          - {label: sectionFive Title, name: sectionFiveTitle, widget: string}
+          - {label: sectionFive subtitle, name: sectionFiveSubtitle, widget: string}
