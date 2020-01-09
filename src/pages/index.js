@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby"
 
+import Layout from '../components/layout'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -19,20 +20,21 @@ class Homepage extends React.Component {
 
 
         return (
-            <>
+            <Layout>
+            {/* <> */}
                 <Helmet title={title} />
-                <section id="header">
+                {/* <section id="header">
                     <div className="inner">
-                        {/* <span className="icon major fa-cloud"></span> */}
+                        <span className="icon major fa-cloud"></span>
                         <h1>Hi, I'm <strong>Nils</strong>, I have a <br />
                         body work practice in Berlin, Germany
                         .</h1>
                         <p>Welcome to my homepage.</p>
-                        {/* <ul className="actions">
+                        <ul className="actions">
                             <li><a href="#one" className="button scrolly">Discover</a></li>
-                        </ul> */}
+                        </ul>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="one" className="main style1">
                     <div className="grid-wrapper">
@@ -122,20 +124,21 @@ class Homepage extends React.Component {
                     </div>
                 </section>
 
-                <section id="footer">
-                    {/* <ul className="icons">
+                {/* <section id="footer">
+                    <ul className="icons">
                         <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
                         <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
                         <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
                         <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
                         <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
-                    </ul> */}
+                    </ul>
                     <ul className="copyright">
                 <li>&copy; Nils { new Date().getFullYear() }</li>
-                        {/* <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> */}
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
-                </section>
-            </>
+                </section> */}
+            {/* </> */}
+            </Layout>
         );
     }
 }
