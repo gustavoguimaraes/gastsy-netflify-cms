@@ -25,11 +25,11 @@ class Template extends React.Component {
     }
 
     render() {
-        const { children } = this.props;
+        const { children, title, subtitle } = this.props;
 
         return (
             <div className={`body ${this.state.loading}`}>
-                <Header />
+                <Header title={title} subtitle={subtitle} />
                 {children}
                 <Footer />
             </div>

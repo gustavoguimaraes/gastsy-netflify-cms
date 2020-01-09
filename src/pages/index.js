@@ -4,11 +4,6 @@ import { graphql } from "gatsby"
 
 import Layout from '../components/layout'
 
-// import pic01 from '../assets/images/pic01.jpg'
-// import pic02 from '../assets/images/pic02.jpg'
-// import pic03 from '../assets/images/pic03.jpg'
-// import pic04 from '../assets/images/pic04.jpg'
-
 class Homepage extends React.Component {
     render() {
 
@@ -139,6 +134,26 @@ export const query = graphql`
             frontmatter {
               title
               subtitle
+              sectionTwoTitle
+              sectionTwoDescription
+              sectionTwoImage
+              sectionThreeTitle
+              sectionThreeDescription
+              sectionThreeImage
+              sectionThreeImageTwo
+              sectionFourTitle
+              sectionFourSubtitle
+              sectionFourImageOne
+              sectionFourImageOneTitle
+              sectionFourImageOneSubtitle
+              sectionFourImageTwo
+              sectionFourImageTwoTitle
+              sectionFourImageTwoSubtitle
+              sectionFourImageThree
+              sectionFourImageThreeTitle
+              sectionFourImageThreeSubtitle
+              sectionFiveTitle
+              sectionFiveSubtitle
             }
           }
         }
