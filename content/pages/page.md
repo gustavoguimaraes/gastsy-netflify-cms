@@ -26,6 +26,7 @@ sectionThreeDescription: >-
   lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu
   ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.
 sectionThreeImage: /assets/pic01.jpg
+sectionThreeImageTwo: /assets/pic01.jpg
 sectionFourTitle: Adipiscing amet consequat
 sectionFourSubtitle: Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.
 sectionFourImageOne: /assets/pic01.jpg
